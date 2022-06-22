@@ -18,6 +18,23 @@ class App extends Component {
     };
     this.handleOnChange = this.handleOnChange.bind(this);
     this.handleOnClick = this.handleOnClick.bind(this);
+    this.handleReset = this.handleReset.bind(this);
+  }
+
+  handleReset() {
+    this.setState({
+      amountDue: "",
+      amountReceived: "",
+      changeDue: "",
+      twenties: "",
+      tens: "",
+      fives: "",
+      ones: "",
+      quarters: "",
+      dimes: "",
+      nickels: "",
+      pennies: ""
+    })
   }
    
   handleOnChange(event) {
@@ -78,8 +95,9 @@ class App extends Component {
                 </div>
               </div>
 
-              <div className="card-footer">
-                <button type="button" className="btn btn-primary btn-block" onClick={this.handleOnClick}>Calculate</button>
+              <div className="card-footer text-center">
+                <button type="button" className="btn btn-primary mr-1" onClick={this.handleOnClick}>Calculate</button>
+                <button type="button" className="btn btn-danger" onClick={this.handleReset}>Reset</button>
               </div>
               
             </div>

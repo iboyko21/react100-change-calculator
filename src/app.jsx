@@ -42,7 +42,6 @@ class App extends Component {
           change[coinTypes[i]] = 0;
         }
     }
-    // console.log(change);
     
     this.setState({
       changeDue: (this.state.amountReceived - this.state.amountDue).toFixed(2),
@@ -89,52 +88,50 @@ class App extends Component {
           <div className="col-sm-8">
             <div className="card">
               <div className="card-body">
-              <div className="alert alert-success text-center">The total change due is ${this.state.changeDue}</div>
+              <div className="alert alert-success text-center m-2 mb-2">The total change due is ${this.state.changeDue}</div>
 
               <div className="container">
-                <div className="row text-center g-2">
-                  <div className="col-sm border rounded bg-light">
+                <div className="row text-center">
+                  <div className="col-sm border rounded bg-light m-2 p-2">
                     <h3>Twenties</h3>
 	                  <p className="change">{this.state.twenties}</p>
                   </div>
-                  <div className="col-sm border rounded bg-light">
+                  <div className="col-sm border rounded bg-light m-2 p-2">
                     <h3>Tens</h3>
 	                  <p className="change">{this.state.tens}</p>
                   </div>
-                  <div className="col-sm border rounded bg-light">
+                  <div className="col-sm border rounded bg-light m-2 p-2">
                     <h3>Fives</h3>
 	                  <p className="change">{this.state.fives}</p>
                   </div>
-                  <div className="col-sm border rounded bg-light">
+                  <div className="col-sm border rounded bg-light m-2 p-2">
                     <h3>Ones</h3>
 	                  <p className="change">{this.state.ones}</p>
                   </div>
                 </div>
 
-                <div className="row g-1 text-center">
-                  <div className="col-sm border rounded bg-light">
+                <div className="row text-center">
+                  <div className="col-sm border rounded bg-light m-2 p-2">
                     <h3>Quarters</h3>
 	                  <p className="change">{this.state.quarters}</p>
                   </div>
-                  <div className="col-sm border rounded bg-light">
+                  <div className="col-sm border rounded bg-light m-2 p-2">
                     <h3>Dimes</h3>
 	                  <p className="change">{this.state.dimes}</p>
                   </div>
-                  <div className="col-sm border rounded bg-light">
+                  <div className="col-sm border rounded bg-light m-2 p-2">
                     <h3>Nickels</h3>
 	                  <p className="change">{this.state.nickels}</p>
                   </div>
-                  <div className="col-sm border rounded bg-light">
+                  <div className="col-sm border rounded bg-light m-2 p-2">
                     <h3>Pennies</h3>
 	                  <p className="change">{this.state.pennies}</p>
                   </div>
                 </div>
-              </div>
 
+              </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>

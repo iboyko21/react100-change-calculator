@@ -88,18 +88,15 @@ class App extends Component {
                   <label htmlFor="amountDue" className="control-label"><b>How much is due?</b></label>
                   <input type="number" step="0.01" id="amountDue" name="amountDue" className="form-control" value={this.state.amountDue} onChange={this.handleOnChange}></input>
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="amountReceived" className="control-label"><b>How much was received?</b></label>
                   <input type="number" step="0.01" id="amountReceived" name="amountReceived" className="form-control" value={this.state.amountReceived} onChange={this.handleOnChange}></input>
                 </div>
               </div>
-
               <div className="card-footer text-center">
                 <button type="button" className="btn btn-primary mr-1" onClick={this.handleOnClick}>Calculate</button>
                 <button type="button" className="btn btn-danger" onClick={this.handleReset}>Reset</button>
               </div>
-              
             </div>
           </div>
 
